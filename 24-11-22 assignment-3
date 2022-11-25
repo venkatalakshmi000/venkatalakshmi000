@@ -1,0 +1,14 @@
+SNO=int(input('S.NO of student is:'))
+NAME=input('Name of the student is:')
+GROUP=input('Group of the student:')
+S1=int(input('marks in subject 1:'))
+S2=int(input('marks in subject 2:'))
+S3=int(input('marks in subject 3:'))
+print('SNO:',SNO)
+print('NAME:',NAME) 
+print('GROUP:',GROUP) 
+
+if(S1>=35 and S2>=35 and S3>=35):
+    print('Student passed the examination')
+else:
+     print('Student failed the examination')
