@@ -1,0 +1,5 @@
+bal=1000
+credit=int(input ('enter the amount to credit:'))
+amt=bal+credit
+print('credited amount:',credit)
+print('remaining balance:',amt)
