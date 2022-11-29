@@ -1,0 +1,13 @@
+sno=int(input('enter sno:')
+sname=input('enter name:')
+sgroup=input('enter group:')
+s1=int(input('enter telugu marks:'))
+s2=int(input('enter english marks:'))
+s3=int(input('enter maths marks:'))
+if s1>35:
+   if s2>35:
+       if s3>35:
+          print('the student had passed')
+else:
+    print('the student had failed')
+
