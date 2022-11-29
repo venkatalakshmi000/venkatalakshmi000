@@ -1,0 +1,15 @@
+Name=input('enter the employee name:')
+basic_salary=int(input('Basic salary='))
+daily_allowance=int(input('daily allowance='))
+travelling_allowance=int(input('travelling allowance='))
+rental_allowance=int(input('rental allowance='))
+netsalary=basic_salary+daily_allowance+travelling_allowance+rental_allowance
+if netsalary>100000:
+    tax=netsalary*(10/100)
+    print('tax=',tax)
+elif netsalary>50000:
+    print('tax=7%')
+elif netsalary>20000:
+    print('tax=4%')
+else:
+    print('tax=0%')
