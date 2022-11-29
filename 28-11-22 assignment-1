@@ -1,0 +1,6 @@
+a=2209
+pin=int(input('enter pin number:'))
+if pin==a:
+   print('continue the transactions')
+else:
+   print('incorrect pin,please try again')
