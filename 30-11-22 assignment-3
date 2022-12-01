@@ -1,0 +1,21 @@
+name=input('enter customer name:')
+phno=int(input('enter customer phno;'))
+bill_no=int(input('enter bill no.:'))
+units=int(input ('enter no. of units consumed:'))
+if units>0 and units<=50:
+  bill=(units*1.90)+25
+elif units>=51 and units<=75:
+ bill=(units*3.00)+30
+elif units>=76 and units<=125:
+ bill=(units*4.50)+45
+elif units>=126 and units<=225:
+ bill=(units*6.00)+50
+elif units>=226 and units<=400:
+ bill=(units*8.75)+55
+elif units>400:
+ bill=(units*9.75)+60
+print('coustomer name:',name)
+print('coustomer phno:',phno)
+print('bill no. is:',bill_no)
+print('no. of units consumed:',units)
+print('bill is:',bill)
