@@ -1,0 +1,30 @@
+potatoes=40
+tomatoes=100
+onions=40
+chilli=50
+name=input('enter customer name:')
+phno=int(input('enter customer phone number:'))
+add=input('enter customer address:')
+pk=int(input('enter no. of kgs of potatoes:'))
+tk=int(input('enter no. of kgs of tomatoes:'))
+ok=int(input('enter no. of kgs of onions:'))
+ck=int(input('enter no. of kgs of chillies:'))
+bill=(pk*potatoes)+(tk*tomatoes)+(ok*onions)+(ck*chilli)
+if bill>3000:
+  tax=bill*(5/100)
+elif bill>2000 and bill<3000:
+  tax=bill*(7/100)
+elif bill>1000 and bill<2000:
+  tax=bill*(10/100)
+elif bill>500 and bill<1000:
+  tax=bill*(15/100)
+else:
+  tax=100
+
+total_bill=bill+tax
+print('coustomer name:',name)
+print('coustomer phno:',phno)
+print('coustomer add:',add)
+print('bill is:',bill)
+print('tax is:',tax)
+print('total bill is:',total_bill)
