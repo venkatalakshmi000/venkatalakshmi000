@@ -1,0 +1,9 @@
+def biggest(a,b):
+  if a>b:
+    print('a is the biggest:',a)
+  else:
+    print('b is the biggest:',b)
+    
+a=int(input('enter a:'))
+b=int(input('enter b:'))
+biggest(a,b)
