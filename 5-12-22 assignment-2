@@ -1,0 +1,12 @@
+n=int(input('enter no of number:'))
+num=int(input('enter number:'))
+large=small=num
+i=2
+while i<=n:
+    num=int(input('enter number:'))
+    if num<small:
+        small=num
+    if num>large:
+        large=num
+    i=i+1
+print('difference=', large-small)
