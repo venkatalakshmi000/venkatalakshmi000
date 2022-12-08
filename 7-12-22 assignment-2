@@ -1,0 +1,11 @@
+def fact(n):
+    s=1
+    for i in range(1,n+1):
+        s=s*i
+    return s
+
+n=int(input('enter the number:'))
+sum=0
+for i in range(1,n+1):
+    sum=sum+fact(i)
+print('sum is:',sum)
