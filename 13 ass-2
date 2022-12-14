@@ -1,0 +1,5 @@
+n=int(input('enter no of numbers:'))
+num=list(map(int,input('enter numbers:').split()))
+num=set(num)
+num=list(num)
+print(num)
