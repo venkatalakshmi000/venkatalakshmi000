@@ -1,0 +1,11 @@
+n=int(input('enter no. of numbers:'))
+x=list(map(int,input('enter the non-zero numbers:').split()))
+pl=[]
+nl=[]
+for i in x:
+    if i>0:
+        pl.append(i)
+    else:
+        nl.append(i)
+l=pl+nl
+print(l)
