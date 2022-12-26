@@ -1,0 +1,15 @@
+def happy(n):
+    sum=0
+    while(n>0):
+        r=n%10
+        sum=sum+r*r
+        n=n//10
+    return sum
+n=int(input('enter a number:'))
+m=happy(n)
+while m>9:
+    m=happy(m)
+if m==1 or m==7:
+    print('perfect number')
+else:
+    print('not perfect number')
