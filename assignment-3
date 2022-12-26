@@ -1,0 +1,12 @@
+n=int(input('enter the limit of fibnocci series:'))
+f1=0
+f2=1
+f3=0
+print(f1)
+print(f2)
+while(f3<=n):
+    f3=f1+f2
+    if f3<=n:
+        print(f3)
+    f1=f2
+    f2=f3
