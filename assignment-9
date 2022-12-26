@@ -1,0 +1,11 @@
+n=int(input('enter the range:'))
+f1=0
+f2=1
+sum=1
+f3=0
+while(f3<n):
+    f3=f1+f2
+    f1=f2
+    f2=f3
+    sum=sum+f3
+print(sum)
