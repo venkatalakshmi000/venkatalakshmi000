@@ -1,0 +1,14 @@
+def isprime(n):
+   flag=0
+   for i in range(2,n):
+        if n%i==0:
+            flag=1
+   return flag
+
+n=int(input('enter the number:'))
+count=0
+for i in range(2,n+1):
+    m=isprime(i)
+    if m==0:
+        count=count+1
+print(count)
