@@ -1,0 +1,20 @@
+n=int(input('enter no. of numbers in list:'))
+x=list(map(int,input('enter the numbers:').split()))
+s=int(input('enter number to search:'))
+low=0
+high=n-1
+mid=(low+high)//2
+flag=0
+while(high>=low):
+    if s>x[mid]:
+        low=mid+1
+    elif s==x[mid]:
+        flag=1
+        break
+    else:
+        high=mid-1
+    mid=(low+high)//2
+if flag==1:
+    print('element found at index:',mid)
+else:
+    print('element not found')
