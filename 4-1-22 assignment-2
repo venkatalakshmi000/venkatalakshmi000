@@ -1,0 +1,21 @@
+r=int(input('enter no. of rows:'))
+c=int(input('enter no. of columns:'))
+l=[]
+for i in range(r):
+    m=[]
+    for j in range(c):
+        x=int(input('enter the number:'))
+        m.append(x)
+    l.append(m)
+l1=[]
+l2=[]
+for i in range(r):
+    for j in range(c):
+        if i==j:
+            l1.append(l[i][j])
+        if i+j==r-1:
+            l2.append(l[i][j])
+if max(l1)>max(l2):
+    print(max(l1))
+else:
+    print(max(l))
