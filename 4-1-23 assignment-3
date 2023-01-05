@@ -1,0 +1,20 @@
+r=int(input('enter no. of rows:'))
+c=int(input('enter no. of columns:'))
+l=[]
+for i in range(r):
+    m=[]
+    for j in range(c):
+        x=int(input('enter the number:'))
+        m.append(x)
+    l.append(m)
+count=0
+for i in range(r):
+    sum=0
+    for j in range(c):
+        sum=sum+l[i][j]
+    if sum==2:
+        count=count+1
+if count==3:
+    print('coder target matrix')
+else:
+    print('not coder target matrix')
