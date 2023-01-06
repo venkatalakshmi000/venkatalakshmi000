@@ -1,0 +1,18 @@
+n=int(input('Enter dimensions:'))
+matrix=[]
+sum=0
+for i in range(n):
+    l=[]
+    for j in range (n):
+        x=int(input('Enter a value:'))
+        l.append(x)
+    matrix.append(l)
+k=int(input('enter k value:'))
+for i in range(n):
+    for j in range(n):
+        if i+j==n-1:
+            matrix[i][j]=k
+        else:
+            matrix[i][j]=0
+for i in matrix:
+    print(i)
