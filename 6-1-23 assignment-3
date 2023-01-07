@@ -1,0 +1,19 @@
+email=input('enter the mail account:')
+phno=input('enter the mobile number:')
+if email.endswith("@gmail.com"):
+    if len(phno)==10 and (phno.startswith("9") or phno.startswith("8") or phno.startswith("7") or phno.startswith("6")):
+        print('registration succesful')
+    else:
+        print('please check your details')
+elif email.endswith("@yahoo.com"):
+    if len(phno)==10 and (phno.startswith("9") or phno.startswith("8") or phno.startswith("7") or phno.startswith("6")):
+        print('registration succesful')
+    else:
+        print('please check your details')
+elif email.endswith("@adc.aditya.ac.in"):
+    if len(phno)==10 and (phno.startswith("9") or phno.startswith("8") or phno.startswith("7") or phno.startswith("6")):
+        print('registration succesful')
+    else:
+        print('please check your details')
+else:
+    print('please check your details')
