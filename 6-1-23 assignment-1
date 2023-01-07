@@ -1,0 +1,4 @@
+n=int(input('enter the range:'))
+x=list(map(int,input('enter the values:').split()))
+l=set(x)
+print(l)
